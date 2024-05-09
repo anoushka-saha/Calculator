@@ -19,6 +19,14 @@ def multi(int1, int2):
 def div(int1, int2):
     return int1 / int2
 
+#Dictionary of operations
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multi,
+    "/": div
+}
+
 #Ask user for the first number
 num1 = int(input("What is the first number?: "))
 
@@ -26,5 +34,7 @@ num1 = int(input("What is the first number?: "))
 num2 = int(input("What is the second number?: "))
 
 #Ask user what operation they want
-opp = input("Pick an operation (+ - * /): ")
+for sym in operations:
+    print(sym)
+opp = input("Choose an operation from the ones above: ")
 
