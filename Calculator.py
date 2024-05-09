@@ -60,4 +60,3 @@ while True:
             num1 = int(input("What is the first number?: "))
         else:
             num1 = ans
-
